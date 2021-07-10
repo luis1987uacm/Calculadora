@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 openPar += 1;
             }
             if (display.getText().toString().substring(i,i+1).equals(")")){
-                openPar += 1;
+                closedPar += 1;
             }
         }
         if(openPar == closedPar || display.getText().toString().substring(textLen -1, textLen).equals("(")){
